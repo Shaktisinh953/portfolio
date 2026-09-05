@@ -2,6 +2,7 @@ services:
   - type: web
     name: shaktisinh-portfolio
     runtime: python
+    plan: free
     buildCommand: bash build.sh
     startCommand: gunicorn config.wsgi:application
     envVars:
