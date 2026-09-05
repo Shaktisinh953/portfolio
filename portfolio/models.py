@@ -4,7 +4,7 @@ from django.urls import reverse
 
 class Profile(models.Model):
     name = models.CharField(max_length=120, default='Your Name')
-    headline = models.CharField(max_length=180, default='Fresher Software Developer')
+    headline = models.CharField(max_length=180, default='Software Developer')
     bio = models.TextField(default='I build clean, scalable and user-focused web applications with Python and Django.')
     objective = models.TextField(default='Seeking an opportunity to contribute as a software developer while growing through meaningful product work.')
     location = models.CharField(max_length=120, default='Open to remote and onsite opportunities')

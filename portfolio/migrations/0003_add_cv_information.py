@@ -11,7 +11,7 @@ def add_cv_information(apps, schema_editor):
     profile = Profile.objects.filter(email='hello@example.com').first() or Profile.objects.first()
     if profile:
         profile.name = 'Shaktisinh Parmar'
-        profile.headline = 'Fresher Software Developer | Python Developer'
+        profile.headline = 'Software Developer | Python Developer'
         profile.bio = 'Motivated and detail-oriented fresher with a foundation in programming, web development, databases and cybersecurity. I enjoy learning new technologies and turning ideas into useful software.'
         profile.objective = 'Seeking an entry-level software developer opportunity in a growth-oriented organization where I can apply my knowledge, learn new skills and contribute effectively to team goals.'
         profile.location = 'Ahmedabad, Gujarat'
